@@ -1,0 +1,21 @@
+
+.entry-page{
+    background-color: #381460;
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.signin
+{
+    position: relative;
+   
+   box-shadow: 6px 10px 6px 0px black;
+  background-color: #ffbd69;;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
