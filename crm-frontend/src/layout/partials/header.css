@@ -1,0 +1,14 @@
+.header-page{
+    background-color: rgb(0, 0, 0);
+    max-height: fit-content;
+}
+.nav1{
+    color: white;
+}
+.logo{
+    width:70px;
+    padding-left: 20px;
+}
+.ml-auto{
+    margin-left: auto;
+}

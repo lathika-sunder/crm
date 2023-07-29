@@ -52,14 +52,12 @@ export const Entrypage = () => {
   {
     setformLoad(frmType);
   }
-
-
   return (
     <div className='entry-page'>
 
       <div className="signin"> 
 
-      {formLoad=='login' &&
+      {formLoad==='login' &&
         <LoginForm 
         handleOnChange={handleOnChange}
         handleOnSubmit={handleOnSubmit}
@@ -68,7 +66,7 @@ export const Entrypage = () => {
         pass={password}>
         </LoginForm>}
 
-        {formLoad=='reset' &&
+        {formLoad==='reset' &&
         <ResetPassword
         handleOnChange={handleOnChange}
         handleOnSubmit={handleOnResetSubmit}
