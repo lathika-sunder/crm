@@ -12,7 +12,13 @@ export const DefaultLayout = ({children}) => {
     
 
         <main className='main'>
+        <div className='breadcrumbs'>
+
+        
+        </div>
+        
         {children}
+
         </main>
       <div className='footer'>
       <Footer />

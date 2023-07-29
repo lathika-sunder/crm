@@ -18,9 +18,9 @@ const Header = () => {
         aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id='basic-navbar-nav' >
           <Nav className="ml-auto">
-            <Nav.Link className='nav' href='../../page/dashboardpage'>Dashboard</Nav.Link>
+            <Nav.Link className='nav' href='../../page/dashboardpage' >Dashboard</Nav.Link>
             <Nav.Link className='nav' href='/dashboard'>Tickets</Nav.Link>
-            <Nav.Link className='nav' href='/dashboard'>Logout</Nav.Link>
+            <Nav.Link className='nav' href='/dashboard'>About Us</Nav.Link>
             <Nav.Link className='nav' href='/dashboard'>Logout</Nav.Link>
           </Nav>
         </Navbar.Collapse>

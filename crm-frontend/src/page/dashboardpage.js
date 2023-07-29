@@ -3,9 +3,19 @@ import {Container,Row,Col, Button} from 'react-bootstrap';
 import '../App.css'
 import TicketTable from '../components/ticket-table/tickettable';
 import tickets from '../assets/data/dummy-tickets.json'
+import Pagebreadcrumb from '../components/breadCrumb/breadcrumbscomp';
 const dashboardpage = () => {
   return (
     <Container>
+    <Row>
+        <Col className='mt-3 mb-1'>
+       
+
+        <Pagebreadcrumb page='Dashboard'/>
+        
+            
+        </Col>
+    </Row>
     <Row>
         <Col className='text-center mt-5 mb-2'>
             <button className='bton  bg- #b21f66;'>Add new Ticket</button>

@@ -13,7 +13,21 @@ th{
     background-color: #381460; 
 }
 
+.breadcrumbs{
+    padding-top: 20px;
+    padding-left: 10px;
+    background :#fe346e;
+    color: #381460; 
+    color: white;
+}
+.breadcrumb-non{
+    color: #381460; 
+    font-weight: bold;
+}
 
+.breadcrumb .text-white:not(.active) {
+    color: white;
+  }
 .header{
     grid-area: header;
 }
