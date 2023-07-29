@@ -2,7 +2,7 @@
     background-color: rgb(0, 0, 0);
     max-height: fit-content;
 }
-.nav1{
+.nav{
     color: white;
 }
 .logo{
@@ -11,4 +11,7 @@
 }
 .ml-auto{
     margin-left: auto;
+}
+.nav-link{
+    color: azure;
 }

@@ -1,3 +1,5 @@
+
+
 .default-layout{
     display: grid;
     grid-template-rows: 80px auto 3rem;
@@ -6,6 +8,11 @@
     "main"
     "footer";
 }
+th{
+    color: blanchedalmond;
+    background-color: #381460; 
+}
+
 
 .header{
     grid-area: header;
@@ -13,8 +20,28 @@
 .main{
     grid-area: main;
     min-height:88vh;
+    background:#ffbd69;
 }
 .footer{
     grid-area: footer;
  
+}
+.first-color { 
+	background: #381460; 
+}
+	
+.second-color { 
+	background: #b21f66; 
+}
+
+.third-color { 
+	background: #fe346e; 
+}
+
+
+.bton{
+    background: #b21f66; 
+     border-radius: 5%;
+     padding: 10px;
+     font-size: 1.8rem;
 }

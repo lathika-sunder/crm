@@ -5,18 +5,18 @@ import '../../src/App.css'
 export const DefaultLayout = ({children}) => {
   return (
     <div>
-    <div className='default-layout'>
+    
       <div className='header'>
       <Header />
       </div>
-    </div>
+    
 
-    <main className='main'>
-    {children}
-    </main>
-    <div className='footer'>
-    <Footer />
-    </div>    
+        <main className='main'>
+        {children}
+        </main>
+      <div className='footer'>
+      <Footer />
+      </div>    
     </div>
     
 
