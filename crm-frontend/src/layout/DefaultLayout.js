@@ -1,32 +1,26 @@
-import React from 'react'
-import Footer from './partials/FooterComp'
-import Header from './partials/HeaderComp'
-import '../../src/App.css'
-export const DefaultLayout = ({children}) => {
+import React from 'react';
+import Footer from './partials/FooterComp';
+import Header from './partials/HeaderComp';
+import '../../src/App.css';
+
+export const DefaultLayout = ({ children }) => {
   return (
-    <div>
-    
+    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
       <div className='header'>
-      <Header />
+        <Header />
       </div>
-    
 
-        <main className='main'>
-        <div className='breadcrumbs'>
+      <main className='main' style={{ flex: 1 }}>
+        <div className='breadcrumbs'></div>
 
-        
-        </div>
-        
         {children}
+      </main>
 
-        </main>
       <div className='footer'>
-      <Footer />
-      </div>    
+        <Footer />
+      </div>
     </div>
-    
+  );
+};
 
-  )
-}
-
-export default DefaultLayout
+export default DefaultLayout;

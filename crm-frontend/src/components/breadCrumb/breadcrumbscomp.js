@@ -6,7 +6,7 @@ function Pagebreadcrumb({page}) {
 
   return (
     
-      <Breadcrumb >
+      <Breadcrumb className='mt-3' >
         <Breadcrumb.Item href="#" >
         <div className='breadcrumb-non'>Home</div>
         </Breadcrumb.Item>

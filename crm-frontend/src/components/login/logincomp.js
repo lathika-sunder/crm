@@ -21,7 +21,7 @@ const LoginForm = ({handleOnChange,handleOnSubmit, formSwitcher, email, pass}) =
             Client login
           </h1>
           <br/>
-<Form autoComplete='off' onSubmit={handleOnSubmit}>
+          <Form autoComplete='off' onSubmit={handleOnSubmit}>
   <Form.Group>
     <Form.Label>Email address</Form.Label>
      <Form.Control
