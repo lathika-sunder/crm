@@ -63,6 +63,16 @@ th{
      font-size: 1.8rem;
 }
 
+.bton-sm{
+    background: #b21f66; 
+     border-radius: 5%;
+     padding: 10px;
+    
+}
+.closebton{
+    margin-left: auto;
+}
+
 
 .jumbopage{
     background-color:#000000; 
@@ -87,4 +97,26 @@ th{
 
   height: 10%; /* Set the height of the colholder to fill its parent */
 }
+.messageHistory{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+.messageHistory:nth-child(even)
+{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
 
+}
+.message{
+    padding: 1rem;
+    width: 80%;
+    border:1px solid #340000;
+    background-color:#381460; 
+    color:#ffbd69;
+    font-style:italic;
+    border-radius: 0.5rem;
+
+}

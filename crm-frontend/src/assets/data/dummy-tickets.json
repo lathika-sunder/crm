@@ -1,63 +1,327 @@
 [
-    {
-        "id": 1,
-        "subject": "Lorem ipsum dolor sit amet",
-        "status": "Client response pending",
-        "addedAt": "2023-02-23"
+  {
+    "id": 1,
+    "subject": "Fix login issue for user authentication",
+    "status": "Client response pending",
+    "addedAt": "2023-02-23",
+    "history": [
+      {
+        "date": "2023-02-23T12:00:00Z",
+        "message": "Hi, I'm experiencing issues logging in. It keeps showing an error message.",
+        "messageBy": "client"
       },
       {
-        "id": 2,
-        "subject": "Consectetur adipiscing elit",
-        "status": "In progress",
-        "addedAt": "2023-03-15"
+        "date": "2023-02-23T12:05:00Z",
+        "message": "I apologize for the inconvenience. Let me check the logs.",
+        "messageBy": "operator"
       },
       {
-        "id": 3,
-        "subject": "Nullam eget felis sit amet",
-        "status": "Completed",
-        "addedAt": "2023-04-02"
+        "date": "2023-02-23T12:10:00Z",
+        "message": "Thank you for your patience. I've identified the problem and will fix it.",
+        "messageBy": "operator"
       },
       {
-        "id": 4,
-        "subject": "Pellentesque dictum felis eu diam",
-        "status": "Client response pending",
-        "addedAt": "2023-05-10"
-      },
-      {
-        "id": 5,
-        "subject": "Vestibulum posuere odio et sagittis",
-        "status": "In progress",
-        "addedAt": "2023-06-07"
-      },
-      {
-        "id": 6,
-        "subject": "Quisque eget nunc suscipit",
-        "status": "In progress",
-        "addedAt": "2023-06-15"
-      },
-      {
-        "id": 7,
-        "subject": "Fusce vel lectus eget lectus",
-        "status": "Completed",
-        "addedAt": "2023-07-01"
-      },
-      {
-        "id": 8,
-        "subject": "Nam vel lorem maximus",
-        "status": "Client response pending",
-        "addedAt": "2023-07-12"
-      },
-      {
-        "id": 9,
-        "subject": "Etiam luctus purus a ligula",
-        "status": "Completed",
-        "addedAt": "2023-07-20"
-      },
-      {
-        "id": 10,
-        "subject": "Maecenas blandit lacus nec ante",
-        "status": "In progress",
-        "addedAt": "2023-08-05"
+        "date": "2023-02-23T12:15:00Z",
+        "message": "Sure, please let me know if you need any further assistance.",
+        "messageBy": "client"
       }
-  ]
-  
+    ]
+  },
+  {
+    "id": 2,
+    "subject": "Implement payment gateway integration",
+    "status": "In progress",
+    "addedAt": "2023-03-15",
+    "history": [
+      {
+        "date": "2023-03-15T14:00:00Z",
+        "message": "We need to integrate PayPal for payments.",
+        "messageBy": "client"
+      },
+      {
+        "date": "2023-03-16T09:30:00Z",
+        "message": "Understood. I'll start working on the PayPal integration.",
+        "messageBy": "operator"
+      },
+      {
+        "date": "2023-03-18T15:45:00Z",
+        "message": "Integration with PayPal API is complete. Testing now.",
+        "messageBy": "operator"
+      },
+      {
+        "date": "2023-03-20T11:10:00Z",
+        "message": "Testing successful. Ready for deployment.",
+        "messageBy": "operator"
+      },
+      {
+        "date": "2023-03-22T10:00:00Z",
+        "message": "Great! Go ahead and deploy the changes.",
+        "messageBy": "client"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "subject": "Update user profile page design",
+    "status": "Completed",
+    "addedAt": "2023-04-02",
+    "history": [
+      {
+        "date": "2023-04-02T09:00:00Z",
+        "message": "The user profile page needs a design update to improve the user experience.",
+        "messageBy": "client"
+      },
+      {
+        "date": "2023-04-02T09:05:00Z",
+        "message": "Sure, I'll work on the design improvements.",
+        "messageBy": "operator"
+      },
+      {
+        "date": "2023-04-04T14:30:00Z",
+        "message": "Design update is ready for review.",
+        "messageBy": "operator"
+      },
+      {
+        "date": "2023-04-05T11:20:00Z",
+        "message": "Looks great! Let's implement it.",
+        "messageBy": "client"
+      },
+      {
+        "date": "2023-04-08T10:00:00Z",
+        "message": "The design changes are now live.",
+        "messageBy": "operator"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "subject": "Resolve performance bottlenecks in application",
+    "status": "Client response pending",
+    "addedAt": "2023-05-10",
+    "history": [
+      {
+        "date": "2023-05-10T13:00:00Z",
+        "message": "The application is running slow. Can you investigate and optimize it?",
+        "messageBy": "client"
+      },
+      {
+        "date": "2023-05-10T13:10:00Z",
+        "message": "I'll conduct a performance analysis to find and fix the bottlenecks.",
+        "messageBy": "operator"
+      },
+      {
+        "date": "2023-05-12T09:30:00Z",
+        "message": "Performance optimizations in progress.",
+        "messageBy": "operator"
+      },
+      {
+        "date": "2023-05-15T12:20:00Z",
+        "message": "I've identified and applied optimizations. The application should be faster now.",
+        "messageBy": "operator"
+      },
+      {
+        "date": "2023-05-18T11:00:00Z",
+        "message": "It indeed feels much faster now. Thanks for the improvements!",
+        "messageBy": "client"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "subject": "Optimize database queries for faster response",
+    "status": "In progress",
+    "addedAt": "2023-06-07",
+    "history": [
+      {
+        "date": "2023-06-07T15:30:00Z",
+        "message": "Database queries are taking too long. Can you optimize them?",
+        "messageBy": "client"
+      },
+      {
+        "date": "2023-06-07T15:40:00Z",
+        "message": "I'll review the queries and make necessary optimizations.",
+        "messageBy": "operator"
+      },
+      {
+        "date": "2023-06-09T09:45:00Z",
+        "message": "Optimizations in progress. Some queries have been improved.",
+        "messageBy": "operator"
+      },
+      {
+        "date": "2023-06-12T10:30:00Z",
+        "message": "The optimized queries have significantly improved the response time.",
+        "messageBy": "operator"
+      },
+      {
+        "date": "2023-06-15T13:00:00Z",
+        "message": "That's great to hear! We appreciate the performance boost.",
+        "messageBy": "client"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "subject": "Enhance data validation for form inputs",
+    "status": "In progress",
+    "addedAt": "2023-06-15",
+    "history": [
+      {
+        "date": "2023-06-15T11:30:00Z",
+        "message": "Form inputs need better validation to prevent incorrect data submissions.",
+        "messageBy": "client"
+      },
+      {
+        "date": "2023-06-15T11:40:00Z",
+        "message": "I'll add enhanced validation to ensure data integrity.",
+        "messageBy": "operator"
+      },
+      {
+        "date": "2023-06-18T14:15:00Z",
+        "message": "Validation improvements are underway. Will be completed soon.",
+        "messageBy": "operator"
+      },
+      {
+        "date": "2023-06-20T12:50:00Z",
+        "message": "Enhanced validation is now implemented. It should prevent incorrect data.",
+        "messageBy": "operator"
+      },
+      {
+        "date": "2023-06-22T09:00:00Z",
+        "message": "We've noticed fewer invalid submissions. Thanks for the update.",
+        "messageBy": "client"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "subject": "Update API endpoints for new features",
+    "status": "Completed",
+    "addedAt": "2023-07-01",
+    "history": [
+      {
+        "date": "2023-07-01T09:15:00Z",
+        "message": "We need to add new API endpoints for the upcoming features.",
+        "messageBy": "client"
+      },
+      {
+        "date": "2023-07-01T09:25:00Z",
+        "message": "I'll create the required API endpoints to support the new features.",
+        "messageBy": "operator"
+      },
+      {
+        "date": "2023-07-04T12:00:00Z",
+        "message": "New API endpoints are now in place and ready for testing.",
+        "messageBy": "operator"
+      },
+      {
+        "date": "2023-07-06T14:30:00Z",
+        "message": "Tested the endpoints, and they work flawlessly. Great job!",
+        "messageBy": "client"
+      },
+      {
+        "date": "2023-07-08T11:20:00Z",
+        "message": "Thank you! We strive to provide the best service.",
+        "messageBy": "operator"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "subject": "Improve error handling and logging",
+    "status": "Client response pending",
+    "addedAt": "2023-07-12",
+    "history": [
+      {
+        "date": "2023-07-12T13:20:00Z",
+        "message": "We noticed some errors in the application. Can you improve the error handling?",
+        "messageBy": "client"
+      },
+      {
+        "date": "2023-07-12T13:30:00Z",
+        "message": "I'll review the error handling and implement improvements.",
+        "messageBy": "operator"
+      },
+      {
+        "date": "2023-07-15T10:40:00Z",
+        "message": "Error handling and logging enhancements are in progress.",
+        "messageBy": "operator"
+      },
+      {
+        "date": "2023-07-18T09:15:00Z",
+        "message": "The error handling improvements have been implemented. Errors should be better managed now.",
+        "messageBy": "operator"
+      },
+      {
+        "date": "2023-07-20T11:00:00Z",
+        "message": "We've observed fewer errors now. Thanks for the prompt fix.",
+        "messageBy": "client"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "subject": "Enhance security measures for user data",
+    "status": "Completed",
+    "addedAt": "2023-07-20",
+    "history": [
+      {
+        "date": "2023-07-20T08:45:00Z",
+        "message": "We need to enhance security measures to safeguard user data.",
+        "messageBy": "client"
+      },
+      {
+        "date": "2023-07-20T09:00:00Z",
+        "message": "I'll review the security measures and implement necessary upgrades.",
+        "messageBy": "operator"
+      },
+      {
+        "date": "2023-07-22T13:30:00Z",
+        "message": "Security enhancements are in progress. Should be completed soon.",
+        "messageBy": "operator"
+      },
+      {
+        "date": "2023-07-25T10:10:00Z",
+        "message": "Enhanced security measures have been implemented. User data is now better protected.",
+        "messageBy": "operator"
+      },
+      {
+        "date": "2023-07-28T12:00:00Z",
+        "message": "We appreciate the increased security measures. Our users will feel safer.",
+        "messageBy": "client"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "subject": "Implement notification system for users",
+    "status": "In progress",
+    "addedAt": "2023-08-05",
+    "history": [
+      {
+        "date": "2023-08-05T11:30:00Z",
+        "message": "We want to implement a notification system for user updates.",
+        "messageBy": "client"
+      },
+      {
+        "date": "2023-08-05T11:45:00Z",
+        "message": "I'll start working on the notification system implementation.",
+        "messageBy": "operator"
+      },
+      {
+        "date": "2023-08-08T14:20:00Z",
+        "message": "The notification system is almost ready. Just a few finishing touches.",
+        "messageBy": "operator"
+      },
+      {
+        "date": "2023-08-10T09:50:00Z",
+        "message": "The notification system is live. Users will now receive updates.",
+        "messageBy": "operator"
+      },
+      {
+        "date": "2023-08-12T12:15:00Z",
+        "message": "We tested it, and it works perfectly! Users will love this feature.",
+        "messageBy": "client"
+      }
+    ]
+  }
+]
