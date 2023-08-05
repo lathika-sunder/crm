@@ -1,10 +1,11 @@
 import React from 'react'
 import {Container,Row,Col, Button} from 'react-bootstrap';
 import '../App.css'
+import { Link } from 'react-router-dom';
 import TicketTable from '../components/ticket-table/tickettable';
 import tickets from '../assets/data/dummy-tickets.json'
 import Pagebreadcrumb from '../components/breadCrumb/breadcrumbscomp';
-const dashboardpage = () => {
+const Dashboardpage = () => {
   return (
     <Container>
     <Row>
@@ -17,14 +18,17 @@ const dashboardpage = () => {
         </Col>
     </Row>
     <Row>
-        <Col className='text-center mt-5 mb-2'>
+    <Link to='/add-ticket'>
+    <Col className='text-center mt-5 mb-2'>
             <button className='bton  bg- #b21f66;'>Add new Ticket</button>
         </Col>
+         </Link>
+       
     </Row>
     <Row>
         <Col className='text-center mt-2 mb-2'>
             <div>Total tickets: 50</div>
-            <div>Pending Tickest: 5</div>
+            <div>Pending Ticket: 5</div>
         </Col>
     </Row>
     <Row>
@@ -41,4 +45,4 @@ const dashboardpage = () => {
   )
 }
 
-export default dashboardpage
+export default Dashboardpage

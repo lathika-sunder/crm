@@ -1,26 +1,35 @@
 import React from "react";
-import './App.css';
-import { Button } from "react-bootstrap";
-import {Entrypage} from "./page/entry/Entrypage";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Entrypage } from "./page/entry/Entrypage";
 import DefaultLayout from "./layout/DefaultLayout";
-import Dashboard from './page/dashboardpage'
+import Dashboardpage from "./page/dashboardpage";
 import AddTicket from "./page/new-ticket/AddTicket";
 import TicketListpage from "./page/ticket-listing/TicketListpage";
 import Ticket from "./page/ticket/ticketpage";
+import Aboutus from "./page/aboutus";
+import PrivateRoute from "./components/privateroute/PrivateRoute";
 
 function App() {
+  
+
   return (
     <div className="App">
-    
-    {/*<Entrypage/>*/}
+    <Router>
+      
+        <Routes>
+          <Route path="/" element={<Entrypage />} />
 
-    <DefaultLayout>
-    {/*<Dashboard/>*/}
-    {/*<AddTicket/>*/}
-    {/* <TicketListpage/> */}
-<Ticket />
-    </DefaultLayout>
-    
+          {/* All the protected routes are wrapped in PrivateRoute */}
+          <Route element={<PrivateRoute />}  />
+            <Route path="/dashboard" exact element={<DefaultLayout><Dashboardpage /></DefaultLayout>}  />
+            <Route path="/add-ticket" element={<DefaultLayout><AddTicket /></DefaultLayout>} />
+            <Route path="/tickets" element={<DefaultLayout><TicketListpage /></DefaultLayout>} />
+            <Route path="/aboutus" element={<DefaultLayout><Aboutus /></DefaultLayout>}  />
+            <Route path="/ticket/:tId" element={<DefaultLayout><Ticket /></DefaultLayout>}  />
+          <Route/>
+        </Routes>
+      
+    </Router>
     </div>
   );
 }
