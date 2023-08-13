@@ -3,6 +3,11 @@ const {route} = require("./ticketrouter")
 const router =express.Router()
 const {hashPassword, comparePasssword} =require("../helpers/bcrypthelper")
 const {insertUser, getUserByEmail} = require("../model/user/Usermodel")
+const { createAccessJWT,createRefreshJWT } = require("../helpers/jwthelper")
+
+
+
+const {json} =require("body-parser");
 
 router.all("/",(req,res,next)=>{
    
@@ -49,6 +54,12 @@ router.post("/login",async (req,res)=>{
     console.log(req.body);
     const {email,password}=req.body;
 
+
+        //hash our password and compare with the db one
+if(!email || !password){
+    return res.json({status:"error", message: "Login Failed"})
+}
+
     //get user with email from db
     const user=await getUserByEmail(email)
 
@@ -59,16 +70,28 @@ router.post("/login",async (req,res)=>{
     if( !passFromDb)
     return res.json({status:"error", message: "Invalid email or password"})
 
+
+
+
+
+
     const result=await comparePasssword(password, passFromDb)
+    if(!result){
+        return res.json({status:"error", message: "Invalid email or password"})
+  
+
+    }
+
+      
+    const accessJWT= await createAccessJWT(user.email)
+    const refreshJWT=await createRefreshJWT(user.email);
+
     console.log(result)
-    //hash our password and compare with the db one
-if(!email || !password){
-    return res.json({status:"error", message: "Login Failed"})
-}
 
-//get USer Detail from database
 
-    res.send({status:"Success", message:"Login Successful"})
+//get User Detail from database
+
+    res.send({status:"Success", message:"Login Successful",accessJWT,refreshJWT})
 });
 
 
