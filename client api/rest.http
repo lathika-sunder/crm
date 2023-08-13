@@ -1,0 +1,22 @@
+## User Signup endpoint
+POST http://localhost:3001/v1/user/
+Content-Type: application/json
+
+{
+    "name":"Vignesh",
+    "company": "Nila CRM",
+    "address": "xyx, India",
+    "phone":"754440307",
+    "email": "lakasunder11@gmail.com",
+    "password":"123lhi"
+}
+### User Sigin endpoint
+POST http://localhost:3001/v1/user/login
+Content-Type: application/json
+
+{
+
+    "email": "lakasunder11@gmail.com",
+     "password":"123lhi"
+   
+}

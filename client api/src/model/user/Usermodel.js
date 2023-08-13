@@ -1,16 +1,23 @@
-const{UserSchema} =require("./Userschema")
+const { UserSchema } = require("./Userschema");
 
 const insertUser = (userObj) => {
-    return new Promise((resolve, reject) => {
-      UserSchema(userObj)
-        .save()
-        .then(data => resolve(data))
-        .catch(error => reject(error));
-    });
-  };
-  
+  const user = new UserSchema(userObj); // Create an instance of the model
+  return user.save(); // Return the Promise directly
+};
+
+const getUserByEmail = async email => {
+  if (!email) throw new Error('Email is required');
+
+  try {
+    const data = await UserSchema.findOne({ email });
+    return data;
+  } catch (error) {
+    throw error;
+  }
+};
 
 
 module.exports = {
-    insertUser,
-}
+  insertUser,
+  getUserByEmail
+};
