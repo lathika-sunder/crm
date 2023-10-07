@@ -10,26 +10,20 @@ import Aboutus from "./page/aboutus";
 import PrivateRoute from "./components/privateroute/PrivateRoute";
 
 function App() {
-  
-
   return (
     <div className="App">
-    <Router>
-      
+      <Router>
         <Routes>
           <Route path="/" element={<Entrypage />} />
-
-          {/* All the protected routes are wrapped in PrivateRoute */}
-          <Route element={<PrivateRoute />}  />
-            <Route path="/dashboard" exact element={<DefaultLayout><Dashboardpage /></DefaultLayout>}  />
+          <Route element={<PrivateRoute />}>
+            <Route path="/dashboard" element={<DefaultLayout><Dashboardpage /></DefaultLayout>} />
             <Route path="/add-ticket" element={<DefaultLayout><AddTicket /></DefaultLayout>} />
             <Route path="/tickets" element={<DefaultLayout><TicketListpage /></DefaultLayout>} />
-            <Route path="/aboutus" element={<DefaultLayout><Aboutus /></DefaultLayout>}  />
-            <Route path="/ticket/:tId" element={<DefaultLayout><Ticket /></DefaultLayout>}  />
-          <Route/>
+            <Route path="/aboutus" element={<DefaultLayout><Aboutus /></DefaultLayout>} />
+            <Route path="/ticket/:tId" element={<DefaultLayout><Ticket /></DefaultLayout>} />
+          </Route>
         </Routes>
-      
-    </Router>
+      </Router>
     </div>
   );
 }

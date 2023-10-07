@@ -34,7 +34,7 @@ th{
     grid-area: main;
     min-height:88vh;
     position: relative;
-    max-height: 150vh;
+    max-height: 950vh;
     background:#ffbd69;
 }
 .footer{
